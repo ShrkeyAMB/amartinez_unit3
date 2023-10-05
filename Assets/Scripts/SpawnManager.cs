@@ -6,21 +6,22 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject obst;
     private Vector3 spawnPos = new Vector3(30, 0, 0);
+    private PlayerController playerCtrl;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("spawnObst",2,2);
-       
+        playerCtrl = GameObject.Find("Player").GetComponent<PlayerController>();
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     void spawnObst()
     {
-        Instantiate(obst, spawnPos, obst.transform.rotation);
+        if (playerCtrl.gameOver == false)
+        {
+            Instantiate(obst, spawnPos, obst.transform.rotation);
+        }
     }
 }
