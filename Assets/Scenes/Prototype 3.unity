@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 981430516171095665, guid: 5a83ab9b53be76a47a310c774424904f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.603145
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 981430516171095665, guid: 5a83ab9b53be76a47a310c774424904f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -323,7 +323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7830737838878174877, guid: 5a83ab9b53be76a47a310c774424904f, type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a83ab9b53be76a47a310c774424904f, type: 3}
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2b136fcc74dab46930a278eccc27ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
 --- !u!850595691 &1147686599
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -702,6 +702,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8654845958438527759, guid: e2196c2fa271f094b993dffa54b0cc46, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8654845958445780141, guid: e2196c2fa271f094b993dffa54b0cc46, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -757,6 +761,10 @@ PrefabInstance:
     - target: {fileID: 8654845959404168188, guid: e2196c2fa271f094b993dffa54b0cc46, type: 3}
       propertyPath: gameOver
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654845959404168191, guid: e2196c2fa271f094b993dffa54b0cc46, type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2196c2fa271f094b993dffa54b0cc46, type: 3}
